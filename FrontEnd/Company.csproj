@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49B9EBBA-D417-4677-BBAB-8C0A180B8331}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Company</RootNamespace>
+    <AssemblyName>Company</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcceptRejectRequest.aspx" />
+    <Content Include="CM_AC.aspx" />
+    <Content Include="CM_profile.aspx" />
+    <Content Include="Contributer_AC.aspx" />
+    <Content Include="Contributor_profile.aspx" />
+    <Content Include="Create_Account.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DeleteContent.aspx" />
+    <Content Include="edit.aspx" />
+    <Content Include="editcm.aspx" />
+    <Content Include="editcontributer.aspx" />
+    <Content Include="editviewer.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="LoginForm.aspx" />
+    <Content Include="milestone3.aspx" />
+    <Content Include="original_content.aspx" />
+    <Content Include="ReceiveRequests.aspx" />
+    <Content Include="Register_User.aspx" />
+    <Content Include="RVA_AC.aspx" />
+    <Content Include="Search_Contributor.aspx" />
+    <Content Include="SendMSG.aspx" />
+    <Content Include="Show the approved original content.aspx" />
+    <Content Include="Show the contributors.aspx" />
+    <Content Include="ShowAdvertisments.aspx" />
+    <Content Include="ShowEvent.aspx" />
+    <Content Include="UploadNew.aspx" />
+    <Content Include="ShowNotification.aspx" />
+    <Content Include="UploadOriginal.aspx" />
+    <Content Include="Viewer_CA.aspx" />
+    <Content Include="Viewer_profile.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceptRejectRequest.aspx.cs">
+      <DependentUpon>AcceptRejectRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptRejectRequest.aspx.designer.cs">
+      <DependentUpon>AcceptRejectRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CM_AC.aspx.cs">
+      <DependentUpon>CM_AC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CM_AC.aspx.designer.cs">
+      <DependentUpon>CM_AC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CM_profile.aspx.cs">
+      <DependentUpon>CM_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CM_profile.aspx.designer.cs">
+      <DependentUpon>CM_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contributer_AC.aspx.cs">
+      <DependentUpon>Contributer_AC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contributer_AC.aspx.designer.cs">
+      <DependentUpon>Contributer_AC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contributor_profile.aspx.cs">
+      <DependentUpon>Contributor_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contributor_profile.aspx.designer.cs">
+      <DependentUpon>Contributor_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Account.aspx.cs">
+      <DependentUpon>Create_Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create_Account.aspx.designer.cs">
+      <DependentUpon>Create_Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteContent.aspx.cs">
+      <DependentUpon>DeleteContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteContent.aspx.designer.cs">
+      <DependentUpon>DeleteContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editcm.aspx.cs">
+      <DependentUpon>editcm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editcm.aspx.designer.cs">
+      <DependentUpon>editcm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editcontributer.aspx.cs">
+      <DependentUpon>editcontributer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editcontributer.aspx.designer.cs">
+      <DependentUpon>editcontributer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editviewer.aspx.cs">
+      <DependentUpon>editviewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editviewer.aspx.designer.cs">
+      <DependentUpon>editviewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="milestone3.aspx.cs">
+      <DependentUpon>milestone3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="milestone3.aspx.designer.cs">
+      <DependentUpon>milestone3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="original_content.aspx.cs">
+      <DependentUpon>original_content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="original_content.aspx.designer.cs">
+      <DependentUpon>original_content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveRequests.aspx.cs">
+      <DependentUpon>ReceiveRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReceiveRequests.aspx.designer.cs">
+      <DependentUpon>ReceiveRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register_User.aspx.cs">
+      <DependentUpon>Register_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register_User.aspx.designer.cs">
+      <DependentUpon>Register_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RVA_AC.aspx.cs">
+      <DependentUpon>RVA_AC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RVA_AC.aspx.designer.cs">
+      <DependentUpon>RVA_AC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Contributor.aspx.cs">
+      <DependentUpon>Search_Contributor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search_Contributor.aspx.designer.cs">
+      <DependentUpon>Search_Contributor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendMSG.aspx.cs">
+      <DependentUpon>SendMSG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendMSG.aspx.designer.cs">
+      <DependentUpon>SendMSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Show the approved original content.aspx.cs">
+      <DependentUpon>Show the approved original content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show the approved original content.aspx.designer.cs">
+      <DependentUpon>Show the approved original content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Show the contributors.aspx.cs">
+      <DependentUpon>Show the contributors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show the contributors.aspx.designer.cs">
+      <DependentUpon>Show the contributors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAdvertisments.aspx.cs">
+      <DependentUpon>ShowAdvertisments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAdvertisments.aspx.designer.cs">
+      <DependentUpon>ShowAdvertisments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowEvent.aspx.cs">
+      <DependentUpon>ShowEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowEvent.aspx.designer.cs">
+      <DependentUpon>ShowEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadNew.aspx.cs">
+      <DependentUpon>UploadNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadNew.aspx.designer.cs">
+      <DependentUpon>UploadNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowNotification.aspx.cs">
+      <DependentUpon>ShowNotification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowNotification.aspx.designer.cs">
+      <DependentUpon>ShowNotification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadOriginal.aspx.cs">
+      <DependentUpon>UploadOriginal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadOriginal.aspx.designer.cs">
+      <DependentUpon>UploadOriginal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer_CA.aspx.cs">
+      <DependentUpon>Viewer_CA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Viewer_CA.aspx.designer.cs">
+      <DependentUpon>Viewer_CA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer_profile.aspx.cs">
+      <DependentUpon>Viewer_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Viewer_profile.aspx.designer.cs">
+      <DependentUpon>Viewer_profile.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53052/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v15.0\WebApplications\Microsoft.WebApplication.targets" />
+</Project>
